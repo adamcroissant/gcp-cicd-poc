@@ -1,6 +1,6 @@
-- add helm resources
+X add helm resources
   X spinnaker
-  - jenkins
+  X jenkins
 - add gcp service account creation
 - add sample code project with basic scaffolding
   - src
@@ -8,7 +8,7 @@
   - jenkinsfile
   - spinnaker application json file
   - spinnaker pipeline(s) json file(s)
-- add k8s deployment manifests
+- add k8s deployment manifests for sample app
 - first time setup script
   - if no gcloud, install gcloud
   - if no kubectl, install kubectl

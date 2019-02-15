@@ -5,3 +5,10 @@ resource "helm_release" "spinnaker" {
 
   depends_on = ["kubernetes_cluster_role_binding.tiller"]
 }
+
+resource "helm_release" "jenkins" {
+  name = "jenkins"
+  chart = "stable/jenkins"
+
+  depends_on = ["kubernetes_cluster_role_binding.tiller"]
+}
