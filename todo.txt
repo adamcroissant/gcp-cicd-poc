@@ -1,0 +1,21 @@
+- add helm resources
+  X spinnaker
+  - jenkins
+- add gcp service account creation
+- add sample code project with basic scaffolding
+  - src
+  - dockerfile
+  - jenkinsfile
+  - spinnaker application json file
+  - spinnaker pipeline(s) json file(s)
+- add k8s deployment manifests
+- first time setup script
+  - if no gcloud, install gcloud
+  - if no kubectl, install kubectl
+  - if no spin, install spin
+  - if no terraform, install terraform
+  - run tf apply
+  - run spin application create
+  - run spin pipeline create
+- test: goal is push commit, jenkins starts docker build, pushes image, spinnaker grabs image, runs deploys to k8s;
+       + local use of tf plan/apply to do infrastructure setup & changes (could make this a first time only thing, and do future updates to infrastructure via jenkins hook + spinnaker job to run tf apply on cluster
